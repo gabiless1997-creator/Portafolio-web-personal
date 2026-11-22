@@ -3,6 +3,7 @@
 Portafolio personal hecho con HTML, CSS y JavaScript. No usa dependencias ni pasos de compilación.
 
 - **Código:** https://github.com/gabiless1997-creator/Portafolio-web-personal
+- **Web publicada:** https://portafolio-web-personal-gabi-ledezma.vercel.app
 - **Publicación:** Vercel. Cada cambio que llega a la rama `main` de GitHub se publica solo, en uno o dos minutos.
 
 ---
