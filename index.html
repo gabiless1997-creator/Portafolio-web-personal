@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriela Ledezma · Diseñadora gráfica & ilustradora</title>
+  <meta name="description" content="Portafolio de Gabriela Ledezma, Senior Graphic Designer e ilustradora de Paraguay. Branding, key visuals, editorial, packaging e ilustración en vivo con De Carlota.">
+  <meta property="og:title" content="Gabriela Ledezma · Portafolio 2026">
+  <meta property="og:description" content="Branding, key visuals, editorial, packaging e ilustración.">
+  <meta property="og:image" content="assets/img/quien-soy/gabi-1.jpg">
+  <meta name="theme-color" content="#f8f3df">
+  <link rel="icon" type="image/png" href="assets/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Tipografías: Urbanist (texto) + La Belle Aurore (acentos) desde Google Fonts; Neulis (títulos) local en assets/fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/Neulis-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de carga (elementos De Carlota: assets/brand/cargando.png) -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <img src="assets/brand/cargando.png" alt="Cargando… de Carlota" width="1400" height="565">
+  </div>
+
+  <!-- Ícono De Carlota reutilizado desde JS (bandas de categoría) -->
+  <template id="flower-tpl">
+    <img src="assets/brand/icono-carlota.png" alt="" class="sticker" loading="lazy">
+  </template>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#inicio" class="brand" aria-label="Inicio">
+        <img src="assets/brand/icono-carlota.png" alt="" class="sticker" width="38" height="38">
+        GALL
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#trabajos">trabajos</a>
+        <a href="#sobre-mi">sobre mí</a>
+        <a href="#de-carlota">de carlota</a>
+        <a href="#contacto">contacto</a>
+      </nav>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/gabriela-l-580b7814a/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.behance.net/gabi_ledezmalovera" target="_blank" rel="noopener" aria-label="Behance"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-behance"/></svg></a>
+        <a href="https://www.instagram.com/decarlota.py/" target="_blank" rel="noopener" aria-label="Instagram De Carlota"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-instagram"/></svg></a>
+      </div>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <h1 class="hero-word" aria-label="Portfolio">P<span class="o">o</span>rtfolio</h1>
+
+        <div class="hero-stage">
+          <div class="hero-left reveal">
+            <h2>Gabriela Ledezma</h2>
+            <p>Diseñadora gráfica multidisciplinar con una fuerte pasión por la ilustración y las artes. Creo marcas, campañas y piezas que se sienten <span class="mark">hechas a mano</span>, aunque sean digitales.</p>
+            <a class="btn" href="#trabajos">Ver trabajos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <figure class="hero-photo" style="margin:0">
+            <div class="cutout"><img src="assets/img/quien-soy/gabi-1.jpg" alt="Gabi sonriendo en un jardín, collage “Hola, soy Gabi”" fetchpriority="high"></div>
+          </figure>
+
+          <div class="hero-right reveal">
+            <span class="role">Senior Graphic Designer<br>& ilustradora · Paraguay</span>
+            <span class="year">2026</span>
+          </div>
+        </div>
+
+        <aside class="note-card" aria-label="Actualmente">
+          <span class="tag">ACTUALMENTE</span>
+          ilustrando en vivo<br>@decarlota.py
+        </aside>
+      </div>
+
+      <!-- doodles -->
+      <img class="doodle sticker float hide-sm" style="top:6%;right:7%;width:clamp(60px,8vw,110px)" src="assets/brand/icono-carlota.png" alt="" aria-hidden="true">
+      <svg class="doodle float hide-sm" style="top:44%;left:3%;width:46px;color:var(--ink);animation-delay:-2s" viewBox="0 0 40 40" aria-hidden="true"><use href="#star-sym"/></svg>
+      <svg class="doodle hide-sm" style="bottom:6%;left:38%;width:140px" viewBox="0 0 160 60" aria-hidden="true"><use href="#squiggle-sym"/></svg>
+      <svg class="doodle spin hide-sm" style="top:2%;left:46%;width:54px;color:var(--yellow)" viewBox="0 0 40 40" aria-hidden="true"><use href="#asterisk-sym"/></svg>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Branding <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Key visuals <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Editorial <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Packaging <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Ilustración en vivo <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Social media <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg></span>
+        <span>Branding <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Key visuals <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Editorial <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Packaging <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Ilustración en vivo <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg> Social media <svg viewBox="0 0 40 40"><use href="#star-sym"/></svg></span>
+      </div>
+    </div>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section" id="sobre-mi">
+      <div class="wrap about-grid">
+        <div class="about-text">
+          <span class="eyebrow">Sobre mí</span>
+          <h2 class="section-title reveal">¿Quién soy?</h2>
+          <p class="lead reveal">Soy Gabi, diseñadora gráfica e industrial. Me encanta <span class="mark">dibujar, pintar, diseñar y crear contenido</span>.</p>
+          <p class="reveal">Tengo más de 4 años de experiencia en la industria. Mis trabajos abarcan editorial, cartelería, branding e identidad, además de diseño de producto de venta masiva y diseño industrial. También desarrollo campañas publicitarias, copys y contenidos para redes sociales.</p>
+          <p class="reveal">Soy fanática de probar materiales nuevos y amo ilustrar de todo. De ahí nació <strong>De Carlota</strong>, mi marca de ilustración en vivo. Me considero creativa, de mente abierta y productiva. Disfruto el trabajo en equipo y siempre busco nuevos desafíos, porque creo que las experiencias nuevas son las que nos hacen crecer.</p>
+
+          <div class="skills reveal">
+            <div>
+              <h3>Software</h3>
+              <ul>
+                <li>Adobe Illustrator <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+                <li>Adobe Photoshop <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></li>
+                <li>Adobe InDesign <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+                <li>Adobe After Effects <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+                <li>Figma <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+                <li>CorelDRAW <span class="dots"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Lo que hago</h3>
+              <ul>
+                <li>Identidad y branding</li>
+                <li>Diseño de logos</li>
+                <li>Key visuals y campañas</li>
+                <li>Diseño editorial</li>
+                <li>Packaging y merchandising</li>
+                <li>Wireframes y social media</li>
+                <li>Ilustración y animación</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="chips reveal" aria-label="Habilidades blandas">
+            <span class="chip">Trabajo en equipo</span><span class="chip">Gestión</span><span class="chip">Multitarea</span>
+            <span class="chip">Comunicación asertiva</span><span class="chip">Adaptabilidad</span><span class="chip">Pensamiento analítico</span>
+            <span class="chip">Resolución de problemas</span><span class="chip">Atención al detalle</span><span class="chip">Ética y compromiso</span>
+          </div>
+        </div>
+
+        <div class="about-collage">
+          <figure class="cutout c1 reveal" style="margin:0"><span class="tape"></span><img src="assets/img/quien-soy/gabi-3.jpg" alt="Gabi haciendo visera con la mano, con notas: diseñadora gráfica e industrial" loading="lazy"></figure>
+          <figure class="cutout c2 reveal" style="margin:0"><span class="tape"></span><img src="assets/img/quien-soy/gabi-2.jpg" alt="Libreta kraft: me encanta dibujar, pintar, diseñar y crear contenido" loading="lazy"></figure>
+          <img class="doodle sticker float hide-sm" style="bottom:4%;right:6%;width:84px" src="assets/brand/icono-carlota.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRABAJOS ============ -->
+    <section class="section" id="trabajos" style="padding-top:0">
+      <div class="wrap">
+        <div class="index-head">
+          <div>
+            <span class="eyebrow">Trabajos seleccionados</span>
+            <h2 class="section-title" style="margin:0">Index<span class="hand" style="color:var(--red);font-size:.6em;margin-left:.2em">✷</span></h2>
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+        <div id="categories"></div>
+      </div>
+    </section>
+
+    <!-- ============ DE CARLOTA ============ -->
+    <section class="section carlota" id="de-carlota">
+      <div class="wrap">
+        <div class="carlota-head">
+          <div>
+            <span class="eyebrow">Mi marca de ilustración</span>
+            <h2 class="carlota-logo reveal"><img src="assets/brand/logo-de-carlota.png" alt="de Carlota" width="900" height="344"></h2>
+          </div>
+          <p class="reveal" style="font-size:1.1em;max-width:46ch">Capturo la magia de tus invitados, la identidad de tu marca o los detalles de tus productos en trazos llenos de color y personalidad. <span class="hand" style="font-size:1.4em;color:var(--red)">Recuerdos únicos en vivo.</span></p>
+        </div>
+
+        <div class="services">
+          <article class="service reveal"><span class="n">01</span><h3>Fashion live illustration</h3><p>Ilustración en vivo en pasarelas, activaciones y eventos de marca.</p></article>
+          <article class="service reveal"><span class="n">02</span><h3>Ilustración de productos</h3><p>Joyas, empaques y piezas dibujadas en pop-ups y lanzamientos.</p></article>
+          <article class="service reveal"><span class="n">03</span><h3>Encargos personalizados</h3><p>Acuarela, pincel o digital. Papelería para bodas, retratos y regalos.</p></article>
+        </div>
+
+        <div class="masonry" id="carlota-gallery"></div>
+
+        <p style="text-align:center;margin-top:36px">
+          <a class="btn" href="https://www.instagram.com/decarlota.py/" target="_blank" rel="noopener">Ver más en @decarlota.py
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </p>
+      </div>
+      <svg class="doodle hide-sm" style="top:40px;right:4%;width:180px" viewBox="0 0 160 60" aria-hidden="true"><use href="#squiggle-sym"/></svg>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="wrap">
+        <span class="eyebrow">Contacto</span>
+        <h2 class="reveal">¿Trabajamos<br><span style="color:var(--red)">juntos?</span></h2>
+        <p class="reveal">Si tenés un proyecto, una marca que necesita algo diferente o un evento al que le querés dar vida, escribime y lo creamos juntos.</p>
+        <a class="mail reveal" href="mailto:gabiless1997@gmail.com">gabiless1997@gmail.com</a>
+        <div class="contact-links reveal">
+          <a class="btn btn-red" href="https://www.linkedin.com/in/gabriela-l-580b7814a/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-linkedin"/></svg> LinkedIn
+          </a>
+          <a class="btn" href="https://www.behance.net/gabi_ledezmalovera" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-behance"/></svg> Behance
+          </a>
+          <a class="btn" href="https://www.instagram.com/decarlota.py/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-instagram"/></svg> @decarlota.py
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="footer-brand"><img src="assets/brand/icono-carlota.png" alt="" class="sticker" width="28" height="28"> © <span id="year">2026</span> Gabriela Alejandra Ledezma Lovera · GALL</span>
+      <span>San Lorenzo, Paraguay · hecho con <span style="color:var(--red)">♥</span> y mucho trazo</span>
+    </div>
+  </footer>
+
+  <!-- Vista de proyecto -->
+  <div class="project-view" id="project-view" role="dialog" aria-modal="true"></div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+    <button class="lb-btn lb-close" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="lb-btn lb-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <img alt="">
+    <button class="lb-btn lb-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+    <span class="lb-count"></span>
+  </div>
+
+  <!-- Sprite de íconos y doodles -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="star-sym" viewBox="0 0 40 40">
+        <path d="M20 2c1.5 10 5 16.5 18 18-13 1.5-16.5 8-18 18-1.5-10-5-16.5-18-18C15 18.5 18.5 12 20 2Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="asterisk-sym" viewBox="0 0 40 40">
+        <g stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M20 3v34M3 20h34M8 8l24 24M32 8 8 32"/></g>
+      </symbol>
+      <symbol id="squiggle-sym" viewBox="0 0 160 60">
+        <path d="M4 40c10-26 26-26 22-6s-12 22-2 10 18-34 30-22-4 30 8 24 14-34 28-28 0 30 12 26 12-30 26-24 10 18 26 8" fill="none" stroke="#1b1a17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.77 2.5 4.77 5.75V21h-4v-5.1c0-1.22-.02-2.78-1.75-2.78-1.75 0-2.02 1.32-2.02 2.69V21h-4V9.75Z"/></symbol>
+      <symbol id="i-behance" viewBox="0 0 24 24"><path d="M8.2 11.3c.9-.4 1.5-1.2 1.5-2.4C9.7 6.8 8.2 6 6.2 6H1v12h5.4c2.2 0 4-1 4-3.4 0-1.5-.8-2.8-2.2-3.3ZM3.4 8h2.4c.9 0 1.6.3 1.6 1.2 0 1-.6 1.3-1.5 1.3H3.4V8Zm2.7 8H3.4v-3.4h2.8c1.1 0 1.8.5 1.8 1.7 0 1.3-.9 1.7-1.9 1.7ZM15 7h5v1.3h-5V7Zm2.6 2.6c-2.8 0-4.6 2-4.6 4.6 0 2.8 1.7 4.6 4.6 4.6 2.2 0 3.6-1 4.3-3.1h-2.2c-.3.8-1.1 1.2-2 1.2-1.5 0-2.3-.9-2.3-2.4h6.6c.2-2.8-1.3-4.9-4.4-4.9Zm-2.2 3.8c.1-1.2.9-1.9 2.1-1.9 1.3 0 1.9.7 2 1.9h-4.1Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <script src="js/projects.js"></script>
+  <script src="js/tools-icons.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
